@@ -8,11 +8,11 @@ Cream-->ButterProcess["撹拌"]
 ButterProcess-->Butter["バター"]
 %% --- 脱脂乳側の流れ ---
 Separator-->SkimMilk["<b>脱脂乳 (副産物)</b>"]
+%% 発酵プロセスへ
+SkimMilk-->Ferment["<b>発酵・凝固</b>"]
 %% そのまま加工
 SkimMilk-->Powder["脱脂粉乳"]
 SkimMilk-->Calpis["カルピス/乳酸菌飲料"]
-%% 発酵プロセスへ
-SkimMilk-->Ferment["<b>発酵・凝固</b>"]
 %% 固形分（カゼイン）の行方
 Ferment-->Curd["<b>カゼイン</b>"]
 Curd-->Oikos["<b>オイコス</b><br>(脂肪ゼロ、カゼイン濃縮)"]
