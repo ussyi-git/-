@@ -3,7 +3,7 @@ graph LR
 Milk["生乳"]-->Separator["遠心分離"]
 %% --- クリーム側の流れ ---
 Separator-->Cream["乳脂肪"]
-Cream-->ButterProcess["撹拌・チャーニング"]
+Cream-->ButterProcess["撹拌"]
   Cream-->creamyProcess["生クリーム"]
 ButterProcess-->Butter["バター"]
 %% --- 脱脂乳側の流れ ---
