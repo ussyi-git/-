@@ -1,6 +1,4 @@
 ```mermaid
-graph TD
-   graph TD
     Milk["生乳 (Raw Milk)"] --> Separator["遠心分離"]
     
     %% こっちが伝統的な美味しいギリシャヨーグルト
