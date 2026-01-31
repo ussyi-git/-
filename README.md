@@ -27,26 +27,26 @@ Whey-->Cooking["飼料(豚の餌)"]
 ```mermaid
 graph LR
 Milk["生乳 (Raw Milk)"]-->Separator["遠心分離"]
-%% --- クリーム側の流れ ---
-Separator-->Cream["クリーム層"]
+%% --- 脂肪分（クリーム層）の流れ ---
+Separator-->Cream["クリーム層 (乳脂肪)"]
+Cream-->FreshCream["<b>🍰 生クリーム</b><br>(そのまま製品化)"]
 Cream-->ButterProcess["撹拌・チャーニング"]
 ButterProcess-->Butter["<b>🧈 バター</b>"]
-ButterProcess-->Buttermilk["💧 バターミルク<br>(欧米ではパンケーキや菓子の材料に)"]
-%% --- 脱脂乳側の流れ ---
+ButterProcess-->Buttermilk["💧 バターミルク<br>(パン・菓子の原料)"]
+%% --- 脱脂分（脱脂乳）の流れ ---
 Separator-->SkimMilk["脱脂乳 (Skim Milk)"]
-%% そのまま加工
-SkimMilk-->Powder["<b>🥛 脱脂粉乳</b><br>(保存食・パン原料・製菓)"]
-SkimMilk-->Calpis["<b>🥤 カルピス/乳酸菌飲料</b><br>(脱脂乳の有効活用から誕生)"]
-%% 酸・酵素で凝固させる
-SkimMilk-->Coagulation["酸・酵素による凝固"]
-%% 固形分（カゼイン）の行方
-Coagulation-->Curd["固形分 (カゼイン)"]
-Curd-->Oikos["<b>🥣 オイコス</b><br>(脂肪ゼロヨーグルト)<br>※発酵後に濃縮"]
-Curd-->Cottage["<b>🥗 カッテージチーズ</b><br>(脱脂乳で作る代表的チーズ)"]
-Curd-->IndCasein["💊 カゼイン原料<br>(プロテイン・食品添加物・接着剤)"]
-%% 液体（ホエイ）の行方
-Coagulation-->Whey["💧 ホエイ (乳清)"]
-Whey-->WPC_WPI["<b>💪 ホエイプロテイン</b><br>(WPC/WPI)"]
-Whey-->Lactose["💊 乳糖<br>(薬の錠剤・甘味料)"]
-Whey-->Cooking["🍳 調理・飼料<br>(肉を柔らかくする/豚の餌)"]
+SkimMilk-->Powder["<b>🥛 脱脂粉乳</b>"]
+SkimMilk-->Calpis["<b>🥤 カルピス/乳酸菌飲料</b>"]
+%% 発酵・凝固
+SkimMilk-->Ferment["発酵・凝固"]
+%% 固形分
+Ferment-->Curd["固形分 (カゼイン)"]
+Curd-->Oikos["<b>🥣 オイコス</b><br>(水切り・濃縮)"]
+Curd-->Cottage["<b>🥗 カッテージチーズ</b>"]
+Curd-->IndCasein["💊 カゼイン原料<br>(プロテイン等)"]
+%% 液体
+Ferment-->Whey["💧 ホエイ (乳清)"]
+Whey-->WPC_WPI["<b>💪 ホエイプロテイン</b>"]
+Whey-->Lactose["💊 乳糖 (錠剤の形を作る成分)"]
+Whey-->Cooking["🍳 調理・飼料"]
 ```
