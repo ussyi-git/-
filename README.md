@@ -13,7 +13,7 @@ SkimMilk-->Calpis["カルピス/乳酸菌飲料"]
 %% 発酵プロセスへ
 SkimMilk-->Ferment["発酵・凝固"]
 %% 固形分（カゼイン）の行方
-Ferment-->Curd["固形分 (カゼイン)"]
+Ferment-->Curd["<b>カゼイン</b>"]
 Curd-->Oikos["<b>オイコス</b>(脂肪ゼロ、カゼイン濃縮)"]
 %% 液体（ホエイ）の行方
 Ferment-->Whey["<b>ホエイ</b>"]
