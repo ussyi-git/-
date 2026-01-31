@@ -11,7 +11,7 @@ Separator-->SkimMilk["<b>脱脂乳 (副産物)</b>"]
 %% 発酵プロセスへ
 SkimMilk-->Ferment["<b>発酵・凝固</b>"]
 %% そのまま加工
-SkimMilk-->Calpis["カルピス/乳酸菌飲料"]
+SkimMilk-->Calpis["乳酸菌飲料"]
 SkimMilk-->Powder["脱脂粉乳"]
 %% 固形分（カゼイン）の行方
 Ferment-->Curd["<b>カゼイン</b>"]
@@ -19,7 +19,6 @@ Curd-->Oikos["<b>高タンパク脂質ゼロ<br>のヨーグルト</b>"]
 %% 液体（ホエイ）の行方
 Ferment-->Whey["<b>ホエイ</b>"]
 Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
-
 ```
 #Whey-->Lactose["乳糖(薬の錠剤・甘味料)"]
 #Whey-->Cooking["飼料(豚の餌)"]
