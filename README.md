@@ -15,7 +15,7 @@ SkimMilk-->Calpis["カルピス/乳酸菌飲料"]
 SkimMilk-->Powder["脱脂粉乳"]
 %% 固形分（カゼイン）の行方
 Ferment-->Curd["<b>カゼイン</b>"]
-Curd-->Oikos["<b>高タンパク脂質ゼロヨーグルト</b>"]
+Curd-->Oikos["<b>高タンパク脂質ゼロ<br>のヨーグルト</b>"]
 %% 液体（ホエイ）の行方
 Ferment-->Whey["<b>ホエイ</b>"]
 Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
