@@ -1,5 +1,4 @@
-# -graph TD
-    Milk[生乳 (Raw Milk)] --> Separator[遠心分離]
+ Milk[生乳 (Raw Milk)] --> Separator[遠心分離]
     
     %% こっちが伝統的な美味しいギリシャヨーグルト
     Milk --> ZennyuGreek[発酵・濃縮]
