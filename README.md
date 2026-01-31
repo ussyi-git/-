@@ -19,9 +19,10 @@ Curd-->Oikos["<b>オイコス</b><br>(脂肪ゼロ、カゼイン濃縮)"]
 %% 液体（ホエイ）の行方
 Ferment-->Whey["<b>ホエイ</b>"]
 Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
+
+```
 #Whey-->Lactose["乳糖(薬の錠剤・甘味料)"]
 #Whey-->Cooking["飼料(豚の餌)"]
-```
 <b></b>
 
 
