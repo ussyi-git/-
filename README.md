@@ -1,4 +1,4 @@
-``mermaid
+```mermaid
 graph LR
 Milk["生乳 (Raw Milk)"]-->Separator["遠心分離"]
 %% --- クリーム側の流れ ---
