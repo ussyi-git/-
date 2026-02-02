@@ -48,9 +48,6 @@ graph LR
     YogurtProcess --> Oikos["<b>🥣 オイコス</b><br>(脂肪ゼロ・高タンパク)"]
     YogurtProcess --> AcidWhey["<b>アシッドホエイ</b><br>(酸性ホエイ)"]
     AcidWhey --> AcidPro["アシッドホエイプロテイン<br>(※加工難易度が高い)"]
-    %% スタイル調整
-    linkStyle 2,3,4 stroke-width:4px,fill:none,stroke:orange;
-    linkStyle 11,12,13 stroke-width:4px,fill:none,stroke:cyan;
 ```
 
 ```mermaid
