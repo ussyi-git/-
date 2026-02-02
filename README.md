@@ -25,7 +25,7 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 <b></b>
 
 
-``` metmaid
+```metmaid
 graph LR
 Milk["生乳"]
 %% === ルート1: チーズ製造（生乳を使用） ===
