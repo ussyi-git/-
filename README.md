@@ -30,10 +30,10 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 graph LR
 Milk["生乳"]
 %% === ルート1: チーズ製造（生乳を使用） ===
-Milk --> CheeseProcess["スターター・レンネット"]
+Milk --> CheeseProcess["菌・酵素(レンネット)"]
 CheeseProcess --> Cheese["ナチュラルチーズ"]
 CheeseProcess --> SweetWhey["<b>チーズホエイ</b>"]
-SweetWhey --> MainPro["<b>チーズホエイプロテイン</b>"]
+SweetWhey --> MainPro["<b>ホエイプロテイン (メイン)</b>"]
 %% === ルート2: 分離・脱脂（脱脂乳を使用） ===
 Milk --> Separator["遠心分離"]
 %% --- クリーム側の流れ ---
@@ -51,8 +51,11 @@ SkimMilk --> Ferment["<b>発酵・酸凝固 (ヨーグルト製造)</b>"]
 %% 固形分（カゼイン）
 Ferment --> Oikos["<b>高タンパク脂質ゼロヨーグルト</b>"]
 %% 液体（ホエイ）
-Ferment --> AcidWhey["アシッドホエイ"]
-AcidWhey --> RarePro["アシッドホエイプロテイン"]
+Ferment --> AcidWhey["<b>アシッドホエイ<b>"]
+AcidWhey --> ["中和・排水処理"]
+AcidWhey --> ["バイオガス"]
+AcidWhey --> ["肥料・飼料"]
+AcidWhey --> RarePro["<b>ホエイプロテイン(明治)</b>"]
 ```
 
 
