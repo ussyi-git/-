@@ -52,9 +52,9 @@ SkimMilk --> Ferment["<b>発酵・酸凝固 (ヨーグルト製造)</b>"]
 Ferment --> Oikos["<b>高タンパク脂質ゼロヨーグルト</b>"]
 %% 液体（ホエイ）
 Ferment --> AcidWhey["<b>アシッドホエイ<b>"]
-AcidWhey --> ["中和・排水処理"]
-AcidWhey --> ["バイオガス"]
-AcidWhey --> ["肥料・飼料"]
+AcidWhey --> main["中和・排水処理"]
+AcidWhey --> sub["バイオガス"]
+AcidWhey --> limit["肥料・飼料"]
 AcidWhey --> RarePro["<b>ホエイプロテイン(明治)</b>"]
 ```
 
