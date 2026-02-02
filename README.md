@@ -26,30 +26,36 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 
 ```mermaid
 graph LR
-Milk["生乳"]-->Separator["遠心分離"]
-%% --- クリーム側の流れ ---
-Separator-->Cream["乳脂肪"]
-Cream-->ButterProcess["撹拌"]
-Cream-->creamyProcess["生クリーム"]
-ButterProcess-->Butter["バター"]
-%% --- 脱脂乳側の流れ ---
-Separator-->SkimMilk["<b>脱脂乳 (副産物)</b>"]
-%% そのまま加工
-SkimMilk-->Calpis["乳酸菌飲料"]
-SkimMilk-->Powder["脱脂粉乳"]
+    Milk["<b>生乳</b>"]
 
-%% === ここが運命の分岐点 ===
-%% ① ヨーグルトルート（酸で固める）
-SkimMilk-->AcidProcess["<b>発酵・酸凝固</b><br>(ヨーグルト製法)"]
-AcidProcess-->Oikos["<b>オイコス</b><br>(高タンパク脂質ゼロ)"]
-AcidProcess-->AcidWhey["<b>アシッドホエイ</b><br>(酸性)"]
-AcidWhey-->AcidPro["アシッドホエイプロテイン<br>(※加工が難しく製品は稀)"]
+    %% === ルート1: チーズ製造（全乳を使うメインルート） ===
+    Milk -->|脂肪を抜かずに| CheeseProcess["<b>① チーズ製造</b><br>(酵素・レンネット)"]
+    CheeseProcess --> Cheese["<b>🧀 ナチュラルチーズ</b><br>(チェダー・ゴーダ等)"]
+    CheeseProcess --> SweetWhey["<b>チーズホエイ</b><br>(スイートホエイ)"]
+    SweetWhey --> SweetPro["<b>🏆 チーズホエイプロテイン</b><br>(WPC/WPIの主流)"]
 
-%% ② チーズルート（酵素で固める）
-SkimMilk-->RennetProcess["<b>酵素・レンネット凝固</b><br>(チーズ製法)"]
-RennetProcess-->Cheese["<b>チーズ</b><br>(カッテージチーズ等)"]
-RennetProcess-->SweetWhey["<b>チーズホエイ</b><br>(スイートホエイ)"]
-SweetWhey-->CheesePro["<b>チーズホエイプロテイン</b><br>(※市販のWPC/WPIの主流)"]
+    %% === ルート2: 分離・脱脂（バター・脱脂乳ルート） ===
+    Milk -->|遠心分離| Separator["<b>② 分離機</b>"]
+    
+    %% クリーム側
+    Separator --> Cream["乳脂肪"]
+    Cream --> Butter["<b>🧈 バター/生クリーム</b>"]
+    
+    %% 脱脂乳側
+    Separator --> SkimMilk["<b>脱脂乳</b>"]
+    
+    %% 脱脂乳の活用
+    SkimMilk --> Calpis["カルピス/脱脂粉乳"]
+    
+    %% オイコス（ヨーグルト）
+    SkimMilk --> YogurtProcess["<b>発酵・酸凝固</b><br>(ヨーグルト製造)"]
+    YogurtProcess --> Oikos["<b>🥣 オイコス</b><br>(脂肪ゼロ・高タンパク)"]
+    YogurtProcess --> AcidWhey["<b>アシッドホエイ</b><br>(酸性ホエイ)"]
+    AcidWhey --> AcidPro["アシッドホエイプロテイン<br>(※加工難易度が高い)"]
+
+    %% スタイル調整
+    linkStyle 2,3,4 stroke-width:4px,fill:none,stroke:orange;
+    linkStyle 11,12,13 stroke-width:4px,fill:none,stroke:cyan;
 ```
 
 ```mermaid
