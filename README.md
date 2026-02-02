@@ -24,10 +24,10 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 #Whey-->Cooking["飼料(豚の餌)"]
 <b></b>
 
+
 ``` metmaid
 graph LR
 Milk["生乳"]
-
 %% === ルート1: チーズ製造（生乳を使用） ===
 Milk --> CheeseProcess["チーズ製造 (酵素凝固)"]
 CheeseProcess --> Cheese["ナチュラルチーズ"]
