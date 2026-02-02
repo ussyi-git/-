@@ -24,6 +24,51 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 #Whey-->Cooking["飼料(豚の餌)"]
 <b></b>
 
+``` metmaid
+graph LR
+Milk["生乳"]
+
+%% === ルート1: チーズ製造（生乳を使用） ===
+Milk --> CheeseProcess["チーズ製造 (酵素凝固)"]
+CheeseProcess --> Cheese["ナチュラルチーズ"]
+CheeseProcess --> SweetWhey["<b>チーズホエイ (スイートホエイ)</b>"]
+SweetWhey --> MainPro["<b>ホエイプロテイン (WPC/WPIの主流)</b>"]
+
+%% === ルート2: 分離・脱脂（脱脂乳を使用） ===
+Milk --> Separator["遠心分離"]
+
+%% --- クリーム側の流れ ---
+Separator --> Cream["乳脂肪"]
+Cream --> Creamy["生クリーム"]
+Cream --> ButterProcess["撹拌"]
+ButterProcess --> Butter["バター"]
+
+%% --- 脱脂乳側の流れ ---
+Separator --> SkimMilk["<b>脱脂乳 (副産物)</b>"]
+
+%% そのまま加工
+SkimMilk --> Calpis["乳酸菌飲料"]
+SkimMilk --> Powder["脱脂粉乳"]
+
+%% 発酵プロセスへ（酸で固める）
+SkimMilk --> Ferment["<b>発酵・酸凝固 (ヨーグルト製造)</b>"]
+
+%% 固形分（カゼイン）
+Ferment --> Oikos["<b>高タンパク脂質ゼロヨーグルト (オイコス等)</b>"]
+
+%% 液体（ホエイ）
+Ferment --> AcidWhey["アシッドホエイ"]
+AcidWhey --> RarePro["アシッドホエイプロテイン (加工難・希少)"]
+```
+
+
+
+
+
+
+
+
+
 ```mermaid
 graph LR
     Milk["<b>生乳</b>"]
@@ -38,7 +83,7 @@ graph LR
     Milk -->|遠心分離| Separator["<b>② 分離機</b>"]
     %% クリーム側
     Separator --> Cream["乳脂肪"]
-    Cream --> Butter["<b>🧈 バター/生クリーム</b>"]
+    Cream --> Butter["バター/生クリーム"]
     %% 脱脂乳側
     Separator --> SkimMilk["<b>脱脂乳</b>"]
     %% 脱脂乳の活用
