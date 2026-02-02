@@ -24,6 +24,7 @@ Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 #Whey-->Cooking["飼料(豚の餌)"]
 <b></b>
 
+```mermaid
 graph LR
 Milk["生乳"]-->Separator["遠心分離"]
 %% --- クリーム側の流れ ---
@@ -49,7 +50,7 @@ SkimMilk-->RennetProcess["<b>酵素・レンネット凝固</b><br>(チーズ製
 RennetProcess-->Cheese["<b>チーズ</b><br>(カッテージチーズ等)"]
 RennetProcess-->SweetWhey["<b>チーズホエイ</b><br>(スイートホエイ)"]
 SweetWhey-->CheesePro["<b>チーズホエイプロテイン</b><br>(※市販のWPC/WPIの主流)"]
-
+```
 
 ```mermaid
 graph LR
