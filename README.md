@@ -20,12 +20,13 @@ Curd-->Oikos["<b>高タンパク脂質ゼロ<br>のヨーグルト</b>"]
 Ferment-->Whey["<b>ホエイ</b>"]
 Whey-->WPC_WPI["<b>ホエイプロテイン</b>"]
 ```
+
 #Whey-->Lactose["乳糖(薬の錠剤・甘味料)"]
 #Whey-->Cooking["飼料(豚の餌)"]
 <b></b>
 
 
-```metmaid
+```mermaid
 graph LR
 Milk["生乳"]
 %% === ルート1: チーズ製造（生乳を使用） ===
