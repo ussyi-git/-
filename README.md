@@ -29,7 +29,7 @@ AcidWhey --> sub["バイオガス"]
 AcidWhey --> limit["肥料・飼料"]
 AcidWhey --> RarePro["<b>ホエイプロテイン(明治)</b>"]
 ```
-```
+```mermaid
 graph LR
     %% ノードの定義
     Intro[<b>1. INTRODUCTION (導入)</b><br>プラスミドの概要と本総説の目的]
